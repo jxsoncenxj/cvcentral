@@ -10,6 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Central</title>
+    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-opened-folder-16.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +28,9 @@ session_start();
         <div class="collapse navbar-collapse" id="navLinks" aria-label="Toggle navigation">
             <div class="content">
                 <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link">HOME</a>
+                    </li>
                     <?php
                     if (!isset($_SESSION['id'])) {
                         echo "<li class='nav-item'>
